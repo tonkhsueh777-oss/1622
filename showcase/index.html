@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#071c24" />
+  <title>1622·攻剿红夷·镇海志｜产品展示</title>
+  <style>
+    :root{
+      --bg:#061a22;--bg2:#0b2a34;--panel:#0d3039;--ink:#f4ead2;--muted:#b9c8c4;
+      --gold:#d7b56d;--gold2:#8f7440;--red:#a83a2e;--line:rgba(215,181,109,.28);--max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;background:var(--bg)}
+    body{margin:0;background:
+      radial-gradient(circle at 80% -10%,rgba(67,117,122,.24),transparent 32%),
+      linear-gradient(180deg,#071c24 0%,#061820 48%,#081f27 100%);
+      color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+      line-height:1.65;-webkit-font-smoothing:antialiased}
+    img,video{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+    .top{position:sticky;top:0;z-index:50;height:72px;background:rgba(4,18,24,.86);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+    .top .wrap{height:100%;display:flex;align-items:center;gap:28px}
+    .brand{display:flex;align-items:baseline;gap:10px;white-space:nowrap}.brand b{font:900 28px/1 Georgia,serif;color:var(--gold)}.brand span{font-weight:800;letter-spacing:.08em}
+    nav{margin-left:auto;display:flex;gap:22px;font-size:14px;color:#d6dfdc}nav a:hover{color:var(--gold)}
+    .play-top{padding:10px 16px;border:1px solid var(--gold);border-radius:999px;color:#ffe4a7;background:rgba(215,181,109,.08)}
+
+    .hero{min-height:72vh;display:grid;align-items:center;padding:64px 0 52px;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;inset:0;background:
+      linear-gradient(90deg,rgba(5,21,28,.98) 0%,rgba(5,21,28,.88) 38%,rgba(5,21,28,.25) 70%,rgba(5,21,28,.6) 100%),
+      url('../assets/zhenhai/14-fire.jpg') right center/48% auto no-repeat;opacity:.95;pointer-events:none}
+    .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:44px;align-items:center}
+    .year{font:900 clamp(76px,12vw,150px)/.8 Georgia,serif;color:var(--gold);letter-spacing:-.04em;text-shadow:0 8px 36px rgba(0,0,0,.35)}
+    h1{font-size:clamp(38px,5.2vw,72px);line-height:1.02;margin:18px 0 22px;letter-spacing:.03em}
+    .lead{font-size:clamp(18px,2vw,24px);color:#d8e0dd;max-width:720px;margin:0 0 28px}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 22px;border-radius:10px;font-weight:800;letter-spacing:.03em}.btn-primary{background:var(--gold);color:#14222a}.btn-ghost{border:1px solid var(--line);background:rgba(12,48,58,.68)}
+    .hero-card{justify-self:end;width:min(420px,100%);transform:rotate(2deg);filter:drop-shadow(0 24px 40px rgba(0,0,0,.45))}.hero-card img{border-radius:18px;border:1px solid rgba(215,181,109,.45)}
+
+    section{padding:82px 0;border-top:1px solid rgba(215,181,109,.12)}
+    .kicker{color:var(--gold);font-size:14px;letter-spacing:.18em;margin-bottom:8px}
+    h2{font-size:clamp(32px,4vw,52px);line-height:1.1;margin:0 0 16px}.section-lead{max-width:780px;color:var(--muted);font-size:18px;margin:0 0 34px}
+
+    .film-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:28px;align-items:stretch}
+    .film{position:relative;background:#02080b;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 22px 60px rgba(0,0,0,.28)}
+    .film video{width:100%;aspect-ratio:16/9;object-fit:cover;background:#02080b}
+    .film-note{padding:14px 18px;font-size:13px;color:#9fb0ad;border-top:1px solid rgba(215,181,109,.12)}
+    .story{padding:30px;background:linear-gradient(160deg,rgba(15,55,64,.9),rgba(7,28,35,.95));border:1px solid var(--line);border-radius:18px}.story p{color:#c4d0cd}.story strong{display:block;color:var(--gold);font-size:26px;margin-bottom:12px}
+
+    .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden}.fact{background:#09252e;padding:28px 24px}.fact b{display:block;color:var(--gold);font-size:24px}.fact span{font-size:14px;color:var(--muted)}
+
+    .gear{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.gear-item{background:#0a2630;border:1px solid var(--line);border-radius:16px;overflow:hidden}.gear-item img{aspect-ratio:3/4;object-fit:cover;width:100%}.gear-item div{padding:16px}.gear-item b{font-size:20px}.gear-item p{margin:4px 0 0;color:var(--muted);font-size:14px}
+
+    .cards{display:flex;gap:16px;overflow-x:auto;padding:4px 2px 18px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}.cards::-webkit-scrollbar{height:6px}.cards::-webkit-scrollbar-thumb{background:#6f6549;border-radius:99px}.cards img{width:190px;flex:0 0 auto;scroll-snap-align:start;border-radius:12px;border:1px solid var(--line);box-shadow:0 12px 28px rgba(0,0,0,.25)}
+
+    .skills{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.skill{background:#091f27;border:1px solid var(--line);border-radius:14px;overflow:hidden}.skill video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#000}.skill b{display:block;padding:12px 14px 4px}.skill span{display:block;color:var(--muted);font-size:12px;padding:0 14px 14px}
+
+    .map-block{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px;align-items:center}.map-art{padding:18px;background:#09252e;border:1px solid var(--line);border-radius:18px}.map-art img{border-radius:10px;width:100%;background:#0b2a34}.map-copy ul{padding-left:1.1em;color:#c6d2cf}.map-copy li{margin:8px 0}
+
+    .final{padding:88px 0 100px;text-align:center;background:linear-gradient(180deg,rgba(8,33,41,.35),rgba(13,43,52,.75))}.final h2{max-width:760px;margin:0 auto 16px}.final p{max-width:720px;margin:0 auto 30px;color:var(--muted)}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:#809793;font-size:13px;text-align:center}
+
+    @media (max-width:980px){
+      .wrap{width:min(100% - 32px,var(--max))}.top{height:64px}.brand span{display:none}nav{display:none}
+      .hero{min-height:auto;padding-top:48px}.hero .wrap{grid-template-columns:1fr}.hero:before{background:linear-gradient(180deg,rgba(5,21,28,.95),rgba(5,21,28,.72)),url('../assets/zhenhai/14-fire.jpg') center/cover no-repeat}.hero-card{justify-self:start;width:290px;transform:none}
+      .film-grid,.map-block{grid-template-columns:1fr}.facts{grid-template-columns:repeat(2,1fr)}.gear{grid-template-columns:repeat(2,1fr)}.skills{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:560px){
+      section{padding:60px 0}.facts,.gear,.skills{grid-template-columns:1fr}.hero-card{width:240px}.cards img{width:160px}.play-top{font-size:13px;padding:8px 12px}
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="#top"><b>1622</b><span>攻剿红夷·镇海志</span></a>
+      <nav><a href="#film">宣传片</a><a href="#product">产品</a><a href="#cards">卡牌</a><a href="#skills">技能影像</a><a href="#map">厦门岛</a></nav>
+      <a class="play-top" href="https://tonkhsueh777-oss.github.io/1622/">进入游戏</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <div class="year">1622</div>
+          <h1>攻剿红夷·镇海志</h1>
+          <p class="lead">把厦门海防史、国潮纸牌策略与 H5 数字体验放进同一套作品。现场先看故事与影像，再拿起纸牌，最后直接在 iPad 上进入游戏。</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#film">观看宣传片</a><a class="btn btn-ghost" href="https://tonkhsueh777-oss.github.io/1622/">直接试玩</a></div>
+        </div>
+        <div class="hero-card"><img src="../assets/zhenhai/13-bully.jpg" alt="1622 卡牌视觉" /></div>
+      </div>
+    </section>
+
+    <section id="film">
+      <div class="wrap">
+        <div class="kicker">PRODUCT FILM</div><h2>先用一支影片，把观众带进 1622</h2>
+        <p class="section-lead">主宣传片位置已经预留。网页会优先播放 <b>showcase/trailer.mp4</b>；如果尚未上传，会自动以现有游戏影像作为临时展示。</p>
+        <div class="film-grid">
+          <div class="film">
+            <video id="promo" controls playsinline preload="metadata" poster="../assets/zhenhai/14-fire.jpg">
+              <source src="trailer.mp4" type="video/mp4" />
+            </video>
+            <div class="film-note" id="filmNote">宣传片 · iPad 可直接全屏播放</div>
+          </div>
+          <div class="story"><strong>一盒桌游，两个体验入口</strong><p>实体纸牌保留桌面对局、收集与交换的触感；数字版本沿用同一套规则，用回合提示与技能影片强化临场感。</p><p>这不是单纯的历史介绍，而是把厦门海防题材转换成能玩、能看、能现场展示的产品。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="product">
+      <div class="wrap">
+        <div class="kicker">PRODUCT SYSTEM</div><h2>从历史题材，到可玩的文创产品</h2>
+        <p class="section-lead">核心玩法保持轻策略、容易理解：移动、探海、计策、军令，最终围绕四项镇海战备展开竞争。</p>
+        <div class="facts">
+          <div class="fact"><b>1622</b><span>厦门海防历史主题</span></div>
+          <div class="fact"><b>4</b><span>四项镇海战备</span></div>
+          <div class="fact"><b>5</b><span>特殊牌技能影像</span></div>
+          <div class="fact"><b>2</b><span>实体纸牌 + H5 数字体验</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="kicker">VICTORY COLLECTION</div><h2>四项镇海战备，是胜利核心</h2>
+        <div class="gear">
+          <article class="gear-item"><img src="../assets/zhenhai/07-gold-seal.jpg" alt="出征将领"><div><b>出征将领</b><p>统帅与军队集结。</p></div></article>
+          <article class="gear-item"><img src="../assets/zhenhai/10-pomelo.jpg" alt="红夷大炮"><div><b>红夷大炮</b><p>重炮与海防火器。</p></div></article>
+          <article class="gear-item"><img src="../assets/zhenhai/08-sword.jpg" alt="水师战船"><div><b>水师战船</b><p>舟师与海上机动力。</p></div></article>
+          <article class="gear-item"><img src="../assets/zhenhai/09-gun.jpg" alt="防海方略"><div><b>防海方略</b><p>布防、航路与战略推演。</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="cards">
+      <div class="wrap">
+        <div class="kicker">CARD GALLERY</div><h2>整套牌面，一眼看懂产品完成度</h2>
+        <p class="section-lead">横向滑动即可浏览。iPad 现场展示时可以直接用手指翻看整套卡牌。</p>
+        <div class="cards">
+          <img src="../assets/zhenhai/03-tainan.jpg" alt="鸿山石壁"><img src="../assets/zhenhai/05-zhuluo.jpg" alt="浯屿水寨"><img src="../assets/zhenhai/04-mengxia.jpg" alt="圭屿海口"><img src="../assets/zhenhai/06-madou.jpg" alt="澎湖风柜尾">
+          <img src="../assets/zhenhai/01-mingcha.jpg" alt="探海"><img src="../assets/zhenhai/02-xunyou.jpg" alt="巡防">
+          <img src="../assets/zhenhai/13-bully.jpg" alt="封港戒严"><img src="../assets/zhenhai/14-fire.jpg" alt="东风火攻"><img src="../assets/zhenhai/15-flower.jpg" alt="调营换防">
+          <img src="../assets/zhenhai/11-jiaqing-order.jpg" alt="徐都督令"><img src="../assets/zhenhai/12-wang-order.jpg" alt="赵游击令">
+          <img src="../assets/zhenhai/07-gold-seal.jpg" alt="出征将领"><img src="../assets/zhenhai/10-pomelo.jpg" alt="红夷大炮"><img src="../assets/zhenhai/08-sword.jpg" alt="水师战船"><img src="../assets/zhenhai/09-gun.jpg" alt="防海方略">
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <div class="kicker">SKILL CINEMATICS</div><h2>五张特殊牌，都有自己的动态演出</h2>
+        <p class="section-lead">不是单纯让卡牌动起来，而是用短镜头切换表现军令、封港、火攻和换防，让线上版本更像完整产品。</p>
+        <div class="skills">
+          <article class="skill"><video controls playsinline preload="metadata" src="../assets/video/bully.mp4"></video><b>封港戒严</b><span>控制 · 跳过完整回合</span></article>
+          <article class="skill"><video controls playsinline preload="metadata" src="../assets/video/fire.mp4"></video><b>东风火攻</b><span>破坏 · 烧毁手牌</span></article>
+          <article class="skill"><video controls playsinline preload="metadata" src="../assets/video/flower.mp4"></video><b>调营换防</b><span>位移 · 强制换位</span></article>
+          <article class="skill"><video controls playsinline preload="metadata" src="../assets/video/jiaqing-order.mp4"></video><b>徐都督令</b><span>军令 · 战备交换</span></article>
+          <article class="skill"><video controls playsinline preload="metadata" src="../assets/video/wang-order.mp4"></video><b>赵游击令</b><span>军令 · 战备交换</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="map">
+      <div class="wrap map-block">
+        <div class="map-art"><img src="../assets/zhenhai/03-tainan.svg" alt="厦门海防地图视觉"></div>
+        <div class="map-copy"><div class="kicker">XIAMEN ISLAND</div><h2>以厦门岛为舞台的海防地图</h2><p class="section-lead">数字版继续使用简洁的十字移动逻辑，但视觉转成厦门岛海防主题，让玩法与地域识别同时成立。</p><ul><li>中央：中左所军门</li><li>四地牌：鸿山石壁、浯屿水寨、圭屿海口、澎湖风柜尾</li><li>停驻地点后通过「探海」取得对应镇海战备</li></ul></div>
+      </div>
+    </section>
+
+    <section class="final">
+      <div class="wrap"><h2>看完故事，直接进入《1622·攻剿红夷·镇海志》</h2><p>现场介绍到这里，不需要切换 App。点击按钮即可直接进入网页版游戏继续体验。</p><a class="btn btn-primary" href="https://tonkhsueh777-oss.github.io/1622/">进入游戏体验</a></div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">1622·攻剿红夷·镇海志　｜　国潮历史纸牌桌游 × H5 数字体验</div></footer>
+
+  <script>
+    (function(){
+      const v=document.getElementById('promo');
+      const note=document.getElementById('filmNote');
+      let fallback=false;
+      v.addEventListener('error',()=>{
+        if(fallback)return; fallback=true;
+        v.src='../assets/video/fire.mp4';
+        note.textContent='主宣传片尚未上传到 showcase/trailer.mp4，当前以技能影像临时展示';
+        v.load();
+      },{once:true});
+    })();
+  </script>
+</body>
+</html>
