@@ -1,1 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="500" height="650" viewBox="0 0 500 650"><defs><pattern id="g" width="45" height="45" patternUnits="userSpaceOnUse"><path d="M45 0H0V45" fill="none" stroke="#819b9f" opacity=".15"/></pattern></defs><rect width="500" height="650" fill="#122f3d"/><rect width="500" height="650" fill="url(#g)"/><g fill="#496263" stroke="#b4a779" stroke-width="2"><path d="M0 0H160l-15 58 37 34-30 45 22 41-30 30 19 49-46 18 19 38-41 37-8 59-37 22 9 39L0 497Z"/><path d="M388 198l23 46-9 65 19 35-17 61-36 42-18 61-31 22-10-34 24-54 3-63 26-59-4-57Z"/><path d="M235 345l15 8-4 25-19-7Z M213 404l17-7 9 23-13 8Z"/></g><g stroke="#bbaa78" opacity=".5" fill="none"><circle cx="271" cy="312" r="177"/><circle cx="271" cy="312" r="118"/><path d="M271 32v560M12 312h475M78 117l381 383M64 508l391-385" stroke-dasharray="4 9"/></g><text x="440" y="66" fill="#c8b483" font-size="23" font-family="serif" writing-mode="tb">镇海图志</text><text x="38" y="619" fill="#b3a079" font-size="12" letter-spacing="4">海防题材 · 示意海图</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1086" height="1448" viewBox="0 0 1086 1448">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0d465f"/>
+    <stop offset="35%" stop-color="#0a3850"/>
+    <stop offset="100%" stop-color="#072f46"/>
+  </linearGradient>
+  <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="1.2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<rect width="100%" height="100%" fill="url(#bg)"/>
+
+<line x1="0" y1="0" x2="0" y2="1448" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="96" y1="0" x2="96" y2="1448" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="192" y1="0" x2="192" y2="1448" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="288" y1="0" x2="288" y2="1448" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="384" y1="0" x2="384" y2="1448" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="480" y1="0" x2="480" y2="1448" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="576" y1="0" x2="576" y2="1448" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="672" y1="0" x2="672" y2="1448" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="768" y1="0" x2="768" y2="1448" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="864" y1="0" x2="864" y2="1448" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="960" y1="0" x2="960" y2="1448" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="1056" y1="0" x2="1056" y2="1448" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="0" y1="0" x2="1086" y2="0" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="0" y1="96" x2="1086" y2="96" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="0" y1="192" x2="1086" y2="192" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="0" y1="288" x2="1086" y2="288" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="0" y1="384" x2="1086" y2="384" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="0" y1="480" x2="1086" y2="480" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="0" y1="576" x2="1086" y2="576" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="0" y1="672" x2="1086" y2="672" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="0" y1="768" x2="1086" y2="768" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="0" y1="864" x2="1086" y2="864" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="0" y1="960" x2="1086" y2="960" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="0" y1="1056" x2="1086" y2="1056" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="0" y1="1152" x2="1086" y2="1152" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="0" y1="1248" x2="1086" y2="1248" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="0" y1="1344" x2="1086" y2="1344" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<line x1="0" y1="1440" x2="1086" y2="1440" stroke="#31576b" stroke-width="1" opacity="0.78"/>
+<circle cx="583" cy="687" r="225" fill="none" stroke="#c8af6c" stroke-width="2" opacity="0.55"/>
+<circle cx="583" cy="687" r="365" fill="none" stroke="#c8af6c" stroke-width="2" opacity="0.5"/>
+<line x1="583" y1="80" x2="583" y2="1348" stroke="#c8af6c" stroke-width="2" stroke-dasharray="14 18" opacity="0.75"/>
+<line x1="20" y1="687" x2="1066" y2="687" stroke="#c8af6c" stroke-width="2" stroke-dasharray="14 18" opacity="0.75"/>
+<line x1="-95.8" y1="8.2" x2="1261.8" y2="1365.8" stroke="#c8af6c" stroke-width="2" stroke-dasharray="12 20" opacity="0.65"/>
+<line x1="1261.8" y1="8.2" x2="-95.8" y2="1365.8" stroke="#c8af6c" stroke-width="2" stroke-dasharray="12 20" opacity="0.65"/>
+<circle cx="583" cy="687" r="7" fill="none" stroke="#d9bf7a" stroke-width="2" opacity="0.8"/>
+<line x1="565" y1="687" x2="601" y2="687" stroke="#d9bf7a" stroke-width="2" opacity="0.8"/>
+<line x1="583" y1="669" x2="583" y2="705" stroke="#d9bf7a" stroke-width="2" opacity="0.8"/>
+<path d="M 603,379 L 484,404 L 474,422 L 495,445 L 489,478 L 465,472 L 449,493 L 421,504 L 407,493 L 394,509 L 398,525 L 373,567 L 396,568 L 392,597 L 355,640 L 336,719 L 358,725 L 373,747 L 342,781 L 312,780 L 299,841 L 310,851 L 325,836 L 340,854 L 376,846 L 358,877 L 314,885 L 306,902 L 372,1003 L 456,978 L 469,993 L 464,1022 L 484,1018 L 496,1042 L 489,1053 L 480,1044 L 444,1049 L 454,1064 L 488,1071 L 534,1058 L 582,1088 L 621,1079 L 637,1043 L 683,1026 L 825,913 L 861,825 L 886,833 L 892,757 L 926,746 L 926,728 L 907,709 L 920,661 L 891,574 L 877,560 L 859,569 L 811,521 L 813,592 L 770,624 L 753,607 L 769,552 L 745,522 L 766,488 L 672,459 L 662,448 L 672,427 L 650,401 Z" fill="#4a7073" stroke="#d9bf7a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 248,2 L 3,2 L 3,932 L 22,929 L 38,942 L 60,936 L 66,917 L 35,866 L 100,824 L 122,778 L 156,758 L 170,734 L 230,709 L 183,681 L 152,624 L 122,609 L 108,575 L 149,576 L 197,522 L 244,501 L 280,446 L 324,444 L 344,408 L 303,372 L 288,340 L 315,316 L 339,320 L 361,275 L 356,255 L 316,216 L 259,203 L 246,169 L 271,164 L 316,183 L 317,166 L 334,164 L 393,216 L 424,217 L 406,170 L 371,162 L 390,128 L 369,93 L 310,72 L 297,55 L 262,55 L 241,22 Z" fill="#4a7073" stroke="#d9bf7a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 55,985 L 45,986 L 38,989 L 34,997 L 22,1005 L 12,1005 L 7,1002 L 3,1002 L 3,1188 L 10,1183 L 17,1165 L 25,1155 L 36,1150 L 43,1143 L 51,1126 L 51,1112 L 47,1101 L 49,1077 L 52,1066 L 66,1047 L 68,1034 L 68,1006 L 60,1000 Z" fill="#4a7073" stroke="#d9bf7a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 190,864 L 186,872 L 189,880 L 189,887 L 184,897 L 178,901 L 178,905 L 174,912 L 174,917 L 181,928 L 182,934 L 184,935 L 184,946 L 191,947 L 197,945 L 207,951 L 211,957 L 226,957 L 230,961 L 233,961 L 235,958 L 237,958 L 240,962 L 252,959 L 260,953 L 261,949 L 265,945 L 265,940 L 267,937 L 266,930 L 262,923 L 262,914 L 252,906 L 247,895 L 242,893 L 242,889 L 230,886 L 223,875 L 214,874 L 207,867 L 205,862 L 201,862 L 196,865 Z" fill="#4a7073" stroke="#d9bf7a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 896,572 L 896,591 L 908,602 L 913,620 L 913,630 L 917,641 L 917,647 L 919,651 L 923,653 L 910,571 Z" fill="#4a7073" stroke="#d9bf7a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 333,340 L 323,354 L 323,357 L 336,357 L 338,360 L 338,370 L 343,370 L 344,368 L 348,369 L 350,380 L 356,383 L 362,374 L 362,368 L 357,362 L 350,363 L 349,357 L 345,353 L 341,352 L 340,345 Z" fill="#4a7073" stroke="#d9bf7a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 258,735 L 255,733 L 250,736 L 242,735 L 239,741 L 230,747 L 230,752 L 233,754 L 238,754 L 245,751 L 251,744 L 256,744 L 260,741 Z" fill="#4a7073" stroke="#d9bf7a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 843,508 L 842,519 L 846,522 L 854,535 L 857,536 L 857,532 L 862,531 L 863,527 L 853,516 L 848,513 L 845,508 Z" fill="#4a7073" stroke="#d9bf7a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 1027,960 L 1021,962 L 1019,968 L 1013,974 L 1017,982 L 1019,982 L 1022,977 L 1025,977 L 1024,968 L 1027,966 Z" fill="#4a7073" stroke="#d9bf7a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="969" y="53" width="53" height="186" fill="none" stroke="#d9bf7a" stroke-width="2"/>
+<text x="100" y="456" style="font-family: Noto Serif CJK SC, Songti SC, SimSun, serif; fill: #d7bf7a; letter-spacing: 6px;" font-size="32">厦门大陆</text>
+<text x="529" y="807" style="font-family: Noto Serif CJK SC, Songti SC, SimSun, serif; fill: #d7bf7a; letter-spacing: 6px;" font-size="34">厦门岛</text>
+<text x="190" y="926" style="font-family: Noto Serif CJK SC, Songti SC, SimSun, serif; fill: #d7bf7a; letter-spacing: 6px;" font-size="24">鼓浪屿</text>
+<text x="60" y="1384" style="font-family: Noto Serif CJK SC, Songti SC, SimSun, serif; fill: #d7bf7a; letter-spacing: 6px;" font-size="24">东南海疆 · 厦门卫</text>
+<text x="996" y="95" style="font-family: Noto Serif CJK SC, Songti SC, SimSun, serif; fill: #d7bf7a;" font-size="24" text-anchor="middle">
+  <tspan x="996" dy="0">厦</tspan>
+  <tspan x="996" dy="34">门</tspan>
+  <tspan x="996" dy="34">海</tspan>
+  <tspan x="996" dy="34">图</tspan>
+</text>
+<rect x="1.5" y="1.5" width="1083" height="1445" fill="none" stroke="#d9bf7a" stroke-width="3"/>
+</svg>
