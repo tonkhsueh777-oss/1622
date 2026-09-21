@@ -27,22 +27,27 @@
     return {...result, activation, displayResult: `${activation}\n\n${body}`};
   }
   async function showTurn(player) {
-    if (!isMobile()) return;
-    const [name, badge] = identities[player.id];
+    if (!player) return;
+    const identity = identities[player.id] || [player.name || '玩家', '?'];
+    const [name, badge] = identity;
+    const isAi = player.kind === 'ai' || /^ai/.test(player.id || '');
     let node = document.getElementById('mobile-turn-prompt');
     if (!node) {
       node = document.createElement('div');
       node.id = 'mobile-turn-prompt';
       node.setAttribute('role', 'status');
-      node.innerHTML = '<span class="turn-identity"></span><div>当前回合<strong></strong></div>';
+      node.setAttribute('aria-live', 'polite');
+      node.innerHTML = '<span class="turn-identity"></span><div class="turn-copy"><span class="turn-label">当前回合</span><strong></strong><small></small></div>';
       document.body.appendChild(node);
     }
     node.querySelector('.turn-identity').textContent = badge;
-    node.querySelector('strong').textContent = name;
+    node.querySelector('strong').textContent = isAi ? `${name} 正在行动` : `${name} 可以行动`;
+    node.querySelector('small').textContent = isAi ? '请看他的动作' : '轮到你行动，请选择一张牌';
+    node.classList.toggle('is-ai', isAi);
     node.classList.add('is-visible');
-    await new Promise(resolve => setTimeout(resolve, 850));
+    await new Promise(resolve => setTimeout(resolve, isMobile() ? 1050 : 1350));
     node.classList.remove('is-visible');
-    await new Promise(resolve => setTimeout(resolve, 150));
+    await new Promise(resolve => setTimeout(resolve, 180));
   }
   game.MobilePrompts = {isMobile, special, showTurn};
 })(globalThis);
