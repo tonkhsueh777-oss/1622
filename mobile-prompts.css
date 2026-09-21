@@ -3,42 +3,90 @@
   z-index: 9990;
   left: 50%;
   top: 45%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(.97);
   box-sizing: border-box;
-  width: 70vw;
-  max-width: 340px;
+  width: min(78vw, 580px);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
-  padding: 18px 12px;
-  background: rgba(4, 26, 30, .94);
-  border: 1px solid #c5a76c;
-  border-radius: 12px;
-  color: #ead7af;
-  font-size: 14px;
+  gap: 24px;
+  padding: 24px 30px;
+  background: linear-gradient(145deg, rgba(3, 24, 29, .98), rgba(8, 32, 33, .98));
+  border: 2px solid #d8b76d;
+  border-radius: 24px;
+  color: #f5e8bd;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity .15s ease, visibility .15s ease;
+  box-shadow: 0 0 0 100vmax rgba(0, 7, 10, .34), 0 22px 70px rgba(0, 0, 0, .58), inset 0 0 0 1px rgba(255, 239, 181, .08);
+  transition: opacity .16s ease, visibility .16s ease, transform .16s ease;
 }
-#mobile-turn-prompt.is-visible { opacity: 1; visibility: visible; }
-#mobile-turn-prompt strong { display: block; margin-top: 5px; font-size: 20px; }
+#mobile-turn-prompt.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+#mobile-turn-prompt .turn-copy { min-width: 0; }
+#mobile-turn-prompt .turn-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #e0bd62;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .2em;
+}
+#mobile-turn-prompt strong {
+  display: block;
+  color: #fff3cf;
+  font-family: "STKaiti", "KaiTi", serif;
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: 1.2;
+  font-weight: 800;
+  white-space: nowrap;
+}
+#mobile-turn-prompt small {
+  display: block;
+  margin-top: 7px;
+  color: #efd17a;
+  font-size: 17px;
+  font-weight: 700;
+}
 .turn-identity {
   display: grid;
   place-items: center;
-  flex: 0 0 44px;
-  height: 44px;
+  flex: 0 0 70px;
+  height: 70px;
   border-radius: 50%;
-  border: 1px solid #c5a76c;
-  background: #174743;
-  font-size: 24px;
+  border: 2px solid #f0d886;
+  background: #284a3e;
+  color: #ffeab1;
+  font-family: "STKaiti", "KaiTi", serif;
+  font-size: 34px;
+  font-weight: 800;
+  box-shadow: 0 0 0 8px rgba(216, 183, 109, .1), 0 0 24px rgba(238, 201, 112, .22);
 }
+#mobile-turn-prompt.is-ai .turn-identity { background: #5d2521; }
 @media (max-width: 768px) {
+  #mobile-turn-prompt {
+    top: 42%;
+    width: min(86vw, 390px);
+    gap: 14px;
+    padding: 18px 16px;
+    border-width: 1px;
+    border-radius: 14px;
+  }
+  #mobile-turn-prompt .turn-label { font-size: 11px; margin-bottom: 3px; }
+  #mobile-turn-prompt strong { font-size: 21px; white-space: normal; }
+  #mobile-turn-prompt small { margin-top: 4px; font-size: 13px; }
+  .turn-identity {
+    flex-basis: 48px;
+    height: 48px;
+    font-size: 24px;
+    box-shadow: 0 0 0 5px rgba(216, 183, 109, .1), 0 0 18px rgba(238, 201, 112, .2);
+  }
   .skill-cinematic { padding: max(14px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right)) max(14px, env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-left)); }
   .skill-cinematic__frame { width: 100%; max-width: 460px; height: min(620px, 80dvh); aspect-ratio: auto; }
   .skill-cinematic.is-auto-close .skill-cinematic__details { inset: 0; background: rgba(7, 26, 32, .94); }
   .skill-cinematic__video { object-fit: contain; }
   .skill-cinematic__details { font-size: 18px; line-height: 1.45; }
 }
-@media (min-width: 769px) { #mobile-turn-prompt { display: none; } }
